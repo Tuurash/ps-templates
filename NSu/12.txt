@@ -1,0 +1,25 @@
+#include<iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main()
+{
+
+    string s1,s2;
+
+	cout<<"Enter S1: ";
+	cin>>s1;
+	cout<<"Enter S2: ";
+    cin>>s2;
+
+    reverse(s2.begin(), s2.end());
+
+
+	if(s1.compare(s2) != 0)
+        cout<<"False";
+    else
+        cout<<"True";
+
+	return 0;
+}
