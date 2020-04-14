@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main()
+{
+    int a,b;
+    cout<<"lower range:";
+    cin>>a;
+    cout<<"Upper range:";
+    cin>>b;
+	int i = 0;
+	while(i< 10)
+        {
+		int r =rand()%((b-a) + 1);
+		while(a<r<b-1)
+        {
+            cout << r << " ";
+            break;
+        }
+    i++;
+	}
+	return 0;
+}
