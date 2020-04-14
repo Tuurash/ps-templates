@@ -1,0 +1,23 @@
+#include<iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main ()
+{
+    int sizee=11;
+    int arr[sizee],i, max, min;
+
+    cout << "Enter the elements of the array : ";
+    for (i = 0; i < sizee; i++)
+        cin >> arr[i];
+
+
+    sort(arr, arr + sizee);
+
+    cout << "Largest element : " << arr[10]<<endl;
+    cout << "2nd Largest element : " << arr[9]<<endl;
+    cout << "Smallest element : " << arr[0]<<endl;
+        cout << "2nd Smallest element : " << arr[1]<<endl;
+    return 0;
+}

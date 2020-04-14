@@ -1,0 +1,50 @@
+#include<iostream>
+#include <algorithm>
+
+using namespace std;
+
+void selectionSortAsc(float arr[], int sizee)
+{
+   sort(arr, arr + sizee);
+}
+
+void selectionSortDsc(float arr[], int sizee)
+{
+   sort(arr, arr + sizee);
+   reverse(arr, arr + sizee);
+}
+
+int main()
+{
+   float a[] = { 22.6, 91.2, 35.1, 78.6, 10.1};
+   int n = sizeof(a)/ sizeof(a[0]);
+
+   float a2[] = { 22.6, 91.2, 35.1, 78.6, 10.1};
+   int n2 = sizeof(a)/ sizeof(a[0]);
+
+   int i;
+   cout<<"\n Given 1st array is:"<<endl;
+   for (i = 0; i < n; i++)
+   cout<< a[i] <<" ";
+   cout<<endl;
+
+
+   cout<<"\n\nGiven 2nd array is:"<<endl;
+   for (i = 0; i < n2; i++)
+   cout<< a2[i] <<" ";
+   cout<<endl;
+
+   selectionSortAsc(a, n);
+    cout<< "\nAscending 1st array:\n";
+   for (i = 0; i < n; i++)
+   cout<< a[i] <<" ";
+
+   selectionSortDsc(a, n);
+    cout<< "\nDescending 2nd array:\n";
+   for (i = 0; i < n; i++)
+   cout<< a[i] <<" ";
+
+   return 0;
+}
+
+
